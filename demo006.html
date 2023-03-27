@@ -1,0 +1,27 @@
+<!--
+    层级关系
+    （1）标签和标签之间有层级关系，例如:<html>标签的子标签为<body>标签
+    （2）我们可以对基本选择器进行组合，表现出层级关系，从而更加针对性的把样式作用于某些标签上
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div font {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <font>我想变红</font>
+        我保持黑色
+    </div>
+    <font>我保持黑色</font>
+</body>
+
+</html>
