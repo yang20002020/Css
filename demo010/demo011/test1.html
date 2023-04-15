@@ -1,0 +1,64 @@
+<!--
+    转换
+    display
+    块元素会自动换行，常见的换行元素有:
+       <h1><p><div><ul>;
+    行内元素：不会自动换行，比如<span><a>;
+    display 属性可以使元素在行内元素和块元素之间相互转换
+    选择器{
+        display: 属性值
+    }
+    常见的属性值：
+    blok:此元素将显示为块元素
+    inline:此元素将显示为行内元素
+    none：此元素将被隐藏，不显示，也不占用页面空间
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline;
+        }
+
+        li {
+            display: inline;
+        }
+
+        span {
+            display: block;
+        }
+        a{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--由块状元素  转变为行内元素-->
+    <h1>块级元素1--div--</h1>
+    <div>div1</div>
+    <div>div2</div>
+    <!--不会自动换行-->
+    <h1>块级元素2--无序列表</h1>
+    <ul>
+        <li>传智播客</li>
+        <li>黑马程序员</li>
+        <li>博学谷</li>
+    </ul>
+    <h1>行内元素1-span</h1>
+    <span>span1</span>
+    <span>span2</span>
+    <!--自动换行-->
+    <h1>行内元素2-a</h1>
+    <a>a1</a>
+    <a>a2</a>
+    你好
+</body>
+
+</html>
